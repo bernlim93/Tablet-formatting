@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal" >
+ 
+    <RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+ android:background="@drawable/background"
+android:layout_weight="1"  >
+
+<fragment
+    android:id="@+id/frag_series"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="115dp"
+    android:layout_marginLeft="95dp"
+    android:layout_marginBottom="55dp"
+    class="com.bernard.singlishtab.ListFrag"
+    android:background="@drawable/background" />
+
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+ android:background="@drawable/background2"
+android:layout_weight="1" >
+<fragment
+android:id="@+id/frag_capt"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="115dp"
+    android:layout_marginRight="95dp"
+    android:layout_marginBottom="55dp"
+class="com.bernard.singlishtab.DetailFrag" />
+</RelativeLayout>
+</LinearLayout>
